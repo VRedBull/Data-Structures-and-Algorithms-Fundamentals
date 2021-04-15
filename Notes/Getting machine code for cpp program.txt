@@ -1,0 +1,5 @@
+gcc -save-temps -fverbose-asm filename.cc
+
+generates - .ii , .o, .s files
+
+.s file have the machine code
