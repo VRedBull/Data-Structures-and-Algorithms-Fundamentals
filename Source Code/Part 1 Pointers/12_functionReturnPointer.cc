@@ -17,7 +17,9 @@ int main(){
     int a = 2, b = 3;
 
     int (*p) = Add(&a,&b);
+
     printHellW();
+    
     cout<<*p<<endl;
 
 }

@@ -15,6 +15,7 @@ int main(){
     p = &add;
     cout<<(*p)(2,3)<<endl;
 
+    //2nd way of assigning and calling the function
     void (*q)();
     q = printHW;
     q();
