@@ -53,7 +53,7 @@ Other languages like JAVA and C# do not have pointers. They access these other t
 
 In low-level programming languages like Cpp or C we don't have dynamic arrays. Meaning once the size of the array is specified we cannot change it. 
 
-But, this is where the pointers come in. We can declare the pointer as an array and specify it's size, but then when we need to change the size the size of the array we can that as well.
+But, this is where the pointers come in. We can declare the pointer as an array and specify it's size, but then when we need to change the size of the array we can't.
 
 What happens when we declare a normal array like. *int A[4];* is memory in stack is allocated to it. And it'll automatically be deleted when it'll go out of scope. 
 

@@ -82,9 +82,11 @@
   
       Rectangle *p3 = new Rectangle();       //In C++ we treat Structure like classes and not have to 
                                               //mention struct everytime
-  }
+  	p3->length = 10;
+      (*p3).breadth = 20;
+}
   ```
-
+  
   
 
 ## Returning an array from a function
@@ -290,3 +292,14 @@ Grouping of Data is Structure, and grouping of instructions is function.
 
   
 
+## Types of Data Structures
+
+Data Structures can be divided into two types
+
+1. Physical 
+2. Logical
+
+- **Physical** Data Structures are Arrays and Linked List.
+
+- **Logical** Data Structures are Stack, Queue, Trees, Graph, Hash Table.
+  - These data Structures are classified as Logical as they are made using the other physical data Structures.
