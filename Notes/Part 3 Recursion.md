@@ -150,7 +150,7 @@ Learn it math.
           int n=0;
           n+=x;
           cout<<x<<" "<<n<<endl;
-          fun1(x-1);              //Since this statement is at the very of the program it's a recursive function.
+          fun1(x-1);              //Since this statement is at the very end of the program it's a tail recursive 								//function.
       }
       return 0;
   }
@@ -548,6 +548,14 @@ int main(){
 
 For eg. (2)^16 can be written as (2*2)^8 ... so instead of multiplying 2 sixteen times, we just multiply 4 eight times.
 
+ OR 
+
+(2)^15 = ((2 * 2) ^ 7)*2  			 
+
+​              ( ( m^2 ) ^ ( (n-1)/2 ) ) * m 
+
+**power of m == (2*(n-1/2))+1 = n**
+
 Code for this...
 
 ```c++
@@ -558,7 +566,7 @@ int halfPower(int m, int n){
         if(n%2==0){
             return halfPower(m*m,n/2);
         }else{
-            return halfPower(m*m,(n-1)/2)*m;
+            return halfPower(m*m,(n-1)/2)*m;  // ((m^2)^((n-1)/2))*m  power of m == (2*(n-1/2))+1 = n
         }
     }
     return 1;
@@ -572,6 +580,8 @@ int main(){
 ```
 
 So now it's two times are more efficient as previous ones.
+
+the pseudo code for similar algorithm from *mycodeschool* YT channel....<img src="D:\Programming\Programming fundamentals\Data structures and algorithms fundamentals\Notes\Power and exponents.png" style="zoom:60%;" />
 
 
 

@@ -36,7 +36,7 @@ int halfPower(int m, int n){
         if(n%2==0){
             return halfPower(m*m,n/2);
         }else{
-            return halfPower(m*m,(n-1)/2)*m;
+            return halfPower(m*m,(n-1)/2)*m;        // ((m^2)^((n-1)/2))*m  power of m == (2*(n-1/2))+1 = n
         }
     }
     return 1;
