@@ -116,9 +116,9 @@
 
 - But the memory allocated to it is linear and not multidimensional.
 
-- There are 3 different ways in which we can represent 2D-arrays.
+- There are 4 different ways in which we can represent 2D-arrays.
 
-  **Way 1** - Simplest array declaration, with memeory inside stack.
+  **Way 1** - Simplest array declaration, with memory inside stack.
 
   ```c++
   int A[3][4] = {			//this 2D array have 3 arrays with each length 4
