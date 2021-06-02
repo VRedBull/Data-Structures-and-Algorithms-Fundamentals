@@ -100,9 +100,6 @@ Operations we can do on an array:
   Below code is having a append function separately
 
   ```c++
-  #include<iostream>
-  using namespace std;
-  
   struct Array{
       int A[10];
       int size;
@@ -134,8 +131,10 @@ Operations we can do on an array:
       display(arr);
       
   }
+  //output
+  
   ```
-
+  
 - When we write a function for append we have to call the function by address and function parameter should have a pointer so that it can change the actual parameters passed to it.
 
 
@@ -149,9 +148,6 @@ Operations we can do on an array:
   A program to insert an element in an array
 
   ```c++
-  #include<iostream>
-  using namespace std;
-  
   struct Array{
       int A[10];
       int size;
@@ -204,7 +200,7 @@ Operations we can do on an array:
   0 1 2 3 4 5 6 7 8 9
   cannot insert element as array have run out of size
   ```
-
+  
    We should use a pointer to change the value.
 
 ### Delete(index)
@@ -782,7 +778,7 @@ Average of all array elements: 138
 
   Here's the code for **right shift**.
 
-  ```
+  ```c++
   #include<iostream>
   using namespace std;
   
@@ -1022,7 +1018,7 @@ There are many types of Binary operations in arrays we can perform. Binary opera
 
 Here, we will discuss Merger operation
 
-- In merging, we will require atleast three arrays,  two of them sorted and one empty.
+- In merging, we will require at least three arrays,  two of them sorted and one empty.
 
 - We will check each element of both array and compare them one by one, if one is smaller than the other then we copy it to the new array.
 
@@ -1246,7 +1242,7 @@ Watch abdul bari videos again to understand the code implementation.
      
          for(int i=0;i<n;i++){
              if(diff != (arr.A[i])-i){
-                     while(diff < (arr.A[i])-i){    //this loop here if there's multiple elements missing from that index i
+                     while(diff < (arr.A[i])-i){    //this loop here if there's multiple elements 													//missing from that index i
                          cout<< i+diff <<" is missing "<<endl;
                          diff++;
                  }
@@ -1374,7 +1370,7 @@ Watch abdul bari videos again to understand the code implementation.
       for(int i=0; i<arr.length-1; i++){
           int counter = 1;
           int j=i;
-          while(arr.A[j]==arr.A[j+1]){     //this loop will increment the counter if there's a duplicate
+          while(arr.A[j]==arr.A[j+1]){     //this loop will increment the counter if there's a 													//duplicate
               counter++,j++;
           }
           if(arr.A[i]==arr.A[i+1] && arr.A[i]!=lastDuplicate){
