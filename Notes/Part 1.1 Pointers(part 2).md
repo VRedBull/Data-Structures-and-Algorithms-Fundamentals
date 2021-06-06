@@ -217,10 +217,33 @@ int main(){
 
 
 
-## Character arrays and pointers
+## Character arrays, Strings and pointers
 
-- Character arrays in C/C++ require a null char ( **'\0'** )at the end of the array.
-- So when we want to make a char array of 5 elements, we actually create a array of 6 index and store the null char ( '\0' ) at the end of the array.
+Characters cannot be directly read by a machine, a machine can only read binary numbers(Binary nos. which are converted from decimal number). 
+
+So every character has been assigned a value (called ASCII code for english lang. , and unicodes for other lang.)
+
+Some of the **ASCII codes** are....
+
+A - 65, B - 66........Z - 90.
+
+a - 97, b - 99,........z - 122.
+
+0 - 48, 1 - 49, ........9 - 57.
+
+Enter - 10, space - 13, esc - 17
+
+Many more are there for (,),+,=,* etc...
+
+Total are 128 = 2^7 (for 7 bits)
+
+Range 0 - 127.
+
+Each char takes 1 byte in memory.
+
+- Character arrays in C/C++ require a null char ( **'\0'** )at the end of the array, so that they can become Strings.
+- **Note** - Char arrays with string delimiter/ null char at the end are Strings, and char arrays without a null char are just normal char arrays.
+- So when we want to make a String of 5 elements, we actually create a char array of 6 index and store the null char ( '\0' ) at the end of the array.
 - The null char let's the compiler know where the array has to end.
 - And as we already know when we pass a array to a function we actually pass the address of the 0th index of the array, so same is true for char array.
 
@@ -283,7 +306,44 @@ Vivaan
 VIKAS PR
 ```
 
+**Note** - we can just use the name of string / char array to print the whole array, we don't have to use a loop to iterate through whole array to print it. And, this feature is only available for char arrays/strings.
 
+### Dynamic char array / String
+
+- Dynamic char array / String is characters in heap memory.
+
+- We create a pointer and assign the string to it, it'll automatically create string in heap.
+
+- For creating a string in heap we don't need to use **new/malloc** keyword.
+
+  Here's a example
+
+  ```c++
+  char *name = "Vikas"; 	//string in heap
+  ```
+
+### Taking input from a string
+
+- To take input for a string we can use scanf / cin.
+
+  ```c++
+  char name[10];
+  scanf("%s", name);			//C style
+  cin>>name;					//C++ style
+  ```
+
+- These will take input of whole array of characters as strings. After giving input press "Enter" to stop reading.
+
+- But they won't read spaces in between characters, like in "Taj Mahal" only "Taj" will be taken as input.
+
+- To overcome this, use **gets()** method.
+
+  ```c++
+  char name[10];
+  gets(name);			//Can take input of words such as "Taj Mahal".
+  ```
+
+  
 
 ### const  char pointer
 
