@@ -3,5 +3,5 @@ Things yet to learn in C++/DSA
 1. STL
 2. Seqential file organization (binary files too) and file handling functions like seekg(), read(), getline() etc.
 3. Maybe do smart pointers.
-4. After abdul bari course checkout the problem solving course.
+4. After abdul bari course checkout the problem solving course(by prateek narang).
 
